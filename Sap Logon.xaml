@@ -1,0 +1,168 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sap_Logon" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.SAP;assembly=UiPath.UiAutomation.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="argument1" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>880,1792</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Sap_Logon_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SapLogon" sap:VirtualizedContainerService.HintSize="553.6,1727.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="512,1634.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="SapLogon" sap:VirtualizedContainerService.HintSize="475.2,1403.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Default="Username" Name="varStrUser" />
+            <Variable x:TypeArguments="x:String" Default="Password" Name="varStrPass" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="433.6,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="saplogon" />
+          <ucas:Logon Window="{x:Null}" ConnectionName="Server_Connection" DelayBetweenRetries="1000" DisplayName="SAP Logon" sap:VirtualizedContainerService.HintSize="433.6,139.2" sap2010:WorkflowViewState.IdRef="Logon_2" Retries="5" SAPLogonPath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" />
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: SAP" sap:VirtualizedContainerService.HintSize="433.6,956.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" Version="V1">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,665.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ucas:Login SecurePassword="{x:Null}" Window="{x:Null}" Client="800" DisplayName="SAP Login 'saplogon.exe  SAP'" sap:VirtualizedContainerService.HintSize="333.6,370.4" sap2010:WorkflowViewState.IdRef="Login_3" IsSecure="False" Language=" " MultiLogonOptionToChoose="Single" Password="[varStrPass]" Timeout="5000" Username="[varStrUser]">
+                    <ucas:Login.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="7787d0a7-fd3e-409f-b68f-932867b98375" InformativeScreenshot="e8ef0bc52de59f6807a0d2381dbbf0cc">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ucas:Login.Target>
+                  </ucas:Login>
+                  <ucas:CallTransaction DisplayName="Call Transaction 'saplogon.exe SAP'" sap:VirtualizedContainerService.HintSize="333.6,160.8" sap2010:WorkflowViewState.IdRef="CallTransaction_5" Transaction="SU01">
+                    <ucas:CallTransaction.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="95b5b574-7a0b-4fbe-8103-75cb8e9b4a14" InformativeScreenshot="b8b2366ff85ffdc28e837520ada8cc6b">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ucas:CallTransaction.Target>
+                  </ucas:CallTransaction>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1048" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="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" InformativeScreenshot="93462abf2409de6c64da6cc8f9b2fc38.png" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP'/&gt;" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="478.4,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;No se ha podido realizar la conexión al sistema&quot;]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>
